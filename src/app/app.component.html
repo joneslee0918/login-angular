@@ -1,8 +1,19 @@
 <div class="wrapper">
   <h2>Angular Image Upload Demo</h2>
+
   <div class="file-upload">
-    <input type="file" name="image" ng2FileSelect [uploader]="uploader" accept="image/x-png,image/gif,image/jpeg" />
-    <button type="button" (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">
+    <input
+      type="file"
+      name="image"
+      ng2FileSelect
+      [uploader]="uploader"
+      accept="image/x-png,image/gif,image/jpeg"
+    />
+    <button
+      type="button"
+      (click)="uploader.uploadAll()"
+      [disabled]="!uploader.getNotUploadedItems().length"
+    >
       Upload
     </button>
   </div>
